@@ -11,6 +11,12 @@ namespace _9_Book_MgtSystem.Controllers
         {
             _context = context;
         }
+
+        public IActionResult InsertData()
+        {
+            return View();
+        }
+        [HttpPost]
         public IActionResult InsertData(Bookk bookk)
         {
             if(!ModelState.IsValid)
